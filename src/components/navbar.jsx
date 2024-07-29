@@ -4,8 +4,8 @@ import greglogo from "~/images/greglogo.webp";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row">
-      <div className="flex p-4">
+    <nav className="flex flex-row bg-gray-600">
+      <div className="flex p-4 bg-white">
         <Link href="/">
           <Image
             src={greglogo}
@@ -18,7 +18,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <div className="justify-items-end flex items-end border border-red-400">
+      <div className="justify-items-end flex items-end border">
         <div className="p-8 bg-green-500"><Link href="/">Home</Link></div>
         <div className="p-8 bg-yellow-500"><Link href="/about">About</Link></div>
         <div className="p-8 bg-red-600"><Link href="/portfolio">Portfolio</Link></div>
