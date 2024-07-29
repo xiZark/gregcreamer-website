@@ -2,7 +2,6 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import Navbar from "~/components/navbar";
 
 export const metadata: Metadata = {
   title: "Greg Creamer",
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <Navbar/>
         {children}
       </body>
     </html>
